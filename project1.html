@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topographic Map Creation for Urban Planning</title>
+    <link rel="stylesheet" href="Projects/project1.css">
+    <script src="Projects/project1.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Topographic Map Creation for Urban Planning Project</h1>
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+    </header>
+    <main>
+        <section class="project-details">
+            <h2>Project Overview</h2>
+            <p>The objective of this project was to create a detailed topographic map of a 50-acre site for an upcoming urban development project. The map was intended to provide accurate elevation data and land features for site planning, design, and construction. The area covered included mixed terrain with both open fields and dense vegetation, requiring precise measurements to capture all relevant features.</p>
+            
+            <img src="final_output_map.jpg" alt="Final Output Map" class="project-image">
+            
+            <h3>Traversing with Total Station</h3>
+            <p>For the data collection phase, a high-precision total station was employed to perform traversing across the site. The total station was carefully calibrated and set up at predetermined control points. Traverse lines were established with accuracy, measuring horizontal angles, vertical angles, and distances to each station. Special attention was given to minimizing errors through regular checks and the use of backsight readings. The data collected included coordinates and elevations of over 200 points, ensuring comprehensive coverage of the site.</p>
+            
+            <h3>Data Processing</h3>
+            <p>Field data was systematically downloaded from the total station into a CSV format, which was then imported into ArcGIS. Initial error adjustment was performed using a least squares adjustment method to correct any discrepancies in the measurements. Following this, coordinates were computed for all stations, translating raw field data into usable geospatial information.</p>
+            
+            <h3>ArcGIS Application</h3>
+            <p>In ArcGIS, the data was imported and organized into layers representing different features such as terrain contours, vegetation boundaries, and water bodies. Contour lines were generated at 1-meter intervals to represent the site's elevation profile accurately. The map's design incorporated a clear legend, scale, and north arrow to ensure that the map was both informative and easy to interpret.</p>
+            
+            <h3>Final Output</h3>
+            <p>The final map design was refined to include all necessary cartographic elements, ensuring clarity and accuracy. The map was exported in both PDF and geospatial PDF formats, allowing for easy integration into other planning documents. The output was shared with the urban planning team, who used it to inform their decisions on infrastructure placement, drainage systems, and road networks.</p>
+            
+            <h3>Computational Techniques</h3>
+            <p>In addition to using ArcGIS, AutoCAD was employed for detailed drafting and further refinement of the topographic features. Python scripts were used to automate repetitive tasks, such as batch processing of elevation data and contour generation, significantly speeding up the workflow. This approach ensured high accuracy and consistency across all stages of the map creation process.</p>
+            
+            <h3>Outcome and Impact</h3>
+            <p>The final topographic map provided a detailed and accurate representation of the site, which was critical for the urban planning team. The map enabled precise planning of infrastructure, minimizing the risk of costly errors during construction. The project was completed on time and met all the client's specifications, demonstrating the effectiveness of the techniques and tools used.</p>
+        </section>
+    </main>
+
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="Map Preview">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>

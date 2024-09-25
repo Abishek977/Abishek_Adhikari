@@ -1,117 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abishek Adhikari's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="home">
-        <h1>Welcome to Abishek Adhikari's Portfolio</h1>
-        <p>Explore my work as a Geomatics Engineer and learn more about my skills and projects.</p>
-        <button id="more-info-btn">Learn More</button>
+      <h1>Welcome to Abishek Adhikari's Portfolio</h1>
+      <p>
+        Explore my work as a Geomatics Engineer and learn more about my skills
+        and projects.
+      </p>
+      <button id="more-info-btn">Learn More</button>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <div class="profile-container">
-            <img src="Abishek.jpg" alt="Profile Picture" class="profile-pic">
-        </div>
-        <p>Hello, I'm Abishek Adhikari, a Geomatics Engineer specializing in spatial data analysis, geodetic measurements, and mapping technologies. I leverage advanced tools like Pix4D, ArcGIS, and Python to tackle complex geospatial problems.</p>
+      <h2>About Me</h2>
+      <div class="profile-container">
+        <img
+          src="Image/Abishek.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+      </div>
+      <p>
+        Hello, I'm Abishek Adhikari, a Geomatics Engineer specializing in<br>
+        spatial data analysis, geodetic measurements, and mapping technologies.<br>
+        I leverage advanced tools like Pix4D, ArcGIS, and Python to tackle<br>
+        complex geospatial problems.
+      </p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill-item">Drone Operations</div>
-            <div class="skill-item">ArcGIS</div>
-            <div class="skill-item">Python Programming</div>
-            <div class="skill-item">Microsoft Word</div>
-            <div class="skill-item">Geospatial Analysis</div>
-            <div class="skill-item">3D Modeling</div>
-            <div class="skill-item">Data Visualization</div>
-            <!-- Add more skills as needed -->
-        </div>
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">Drone Operations</div>
+        <div class="skill-item">ArcGIS</div>
+        <div class="skill-item">Python Programming</div>
+        <div class="skill-item">Microsoft Word</div>
+        <div class="skill-item">Geospatial Analysis</div>
+        <div class="skill-item">Total Station Operations</div>
+        <div class="skill-item">Data Visualization</div>
+      </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <a href="project1.jpg" class="lightbox">
-                    <img src="project1.jpg" alt="Project 1">
-                </a>
-                <h3>Geospatial Analysis Project</h3>
-                <p>This project involved detailed geospatial analysis using GIS to create interactive maps and perform spatial queries.</p>
-            </div>
-            <div class="portfolio-item">
-                <a href="project2.jpg" class="lightbox">
-                    <img src="project2.jpg" alt="Project 2">
-                </a>
-                <h3>3D Modeling and Visualization</h3>
-                <p>Created 3D models from aerial imagery and LIDAR data to visualize terrain and infrastructure for urban planning.</p>
-            </div>
-            <!-- Add more portfolio items as needed -->
+  <section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item left">
+      <div class="portfolio-content">
+        <h3>Topographic Map Creation</h3>
+        <p>
+          This project involved detailed topographic map preparation of an
+          area with the help of ARCGIS.<br />
+          <a href="project1.html"> LEARN MORE </a>
+        </p>
+      </div>
+      <a href="Image/Sushma.png" class="lightbox">
+        <img src="Image/Sushma.png" alt="Project 1" />
+      </a>
+    </div>
+    <div class="portfolio-item right">
+      <a href="project2.jpg" class="lightbox">
+        <img src="project2.jpg" alt="Project 2" />
+      </a>
+      <div class="portfolio-content">
+        <h3>3D Modeling and Visualization</h3>
+        <p>
+          Created 3D models from aerial imagery and LIDAR data to visualize
+          terrain and infrastructure for urban planning.
+        </p>
+      </div>
+    </div>
+      <div class="portfolio-item left">
+          <div class="portfolio-content">
+            <h3>Site Selection using MCDA in GIS</h3>
+            <p>
+              This project utilized Multi-Criteria Decision Analysis (MCDA) in GIS to identify optimal sites for land use based on various factors.
+              <br /><a href="Project_3.html"> LEARN MORE </a>
+            </p>
+          </div>
+          <a href="Image/Final_Product_Project-3.png" class="lightbox">
+            <img src="Image/Final_Product_Project-3.png" alt="Site Selection using MCDA in GIS" />
+          </a>
         </div>
-    </section>
+        <div class="portfolio-item right">
+          <a href="Image/LST_2.png" class="lightbox">
+            <img src="Image/LST_2.png" alt="Spatio-temporal Analysis using GIS" />
+          </a>
+          <div class="portfolio-content">
+            <h3>Spatio-temporal Analysis using GIS</h3>
+            <p>
+              This study involves analyzing spatial and temporal changes in urban environments using GIS tools to assess growth trends over time.
+           <br /><a href="Project-4.html"> LEARN MORE </a>
+          </p>
+          </div>
+        </div>
+  </div>
+</section>
 
     <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Bachelor's Degree in Geomatics Engineering</h3>
-            <p>TU University, Paschimanchal Campus, Pokhara - Graduation Year</p>
-        </div>
-        <!-- Add more education details as needed -->
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor's Degree in Geomatics Engineering</h3>
+        <p>TU University, Paschimanchal Campus, Pokhara - Graduation Year</p>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-            <input type="hidden" name="access_key" value="94e54c46-79f8-4cf7-8666-dad4d8a72fe4">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <div class="social-links">
-            <a href="https://www.facebook.com/Abishek.Adhikari.907" target="_blank" class="social-icon facebook">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
-            </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Logo">
-            </a>
-            <a href="https://www.instagram.com/abishekadhikari7/" target="_blank" class="social-icon instagram">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
-            </a>
-        </div>
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/Abishek.Adhikari.907"
+          target="_blank"
+          class="social-icon facebook"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook Logo"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourprofile"
+          target="_blank"
+          class="social-icon linkedin"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+            alt="LinkedIn Logo"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/abishekadhikari7/"
+          target="_blank"
+          class="social-icon instagram"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram Logo"
+          />
+        </a>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Abishek Adhikari. All rights reserved.</p>
+      <p>&copy; 2024 Abishek Adhikari. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-</body>
+  </body>
 </html>

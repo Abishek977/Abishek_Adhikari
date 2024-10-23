@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.991);
     color: #f4f4f4;
     padding-bottom: 60px;
     transition: background-color 0.5s;
-}
+    width: 95%;
+    
 
+}
 h2{
     color: #0bacf1;
     font-size: 30px;
@@ -31,11 +33,11 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -51,19 +53,20 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 100px 20px;
+    padding: 20px 0px;
     text-align: center;
     background: rgba(0, 0, 0, 0.991);
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 1200px;
+    border-radius: 0px;
+    max-width: 100%;
     position: relative;
     transition: all 0.5s ease-in-out;
+    margin-left: 5%;
 }
 
 #home {
-    background: linear-gradient(to right, #e3e9ea49, #0bacf1);
-   height:8em ;
+    margin-top: 60px;
+    background: linear-gradient(to right, #968a8d49, #0bacf1);
+   height:10em ;
 }  
 #home h1{
     color: aqua;
@@ -71,23 +74,34 @@ section {
 }
 
 .profile-container {
+    display: flex;
     text-align: center;
     margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
 }
+ .left-part{
+    flex: 1;
+    margin-left: 10px ;
+ }
+ .right-part{
+    flex: 1.5;
+    text-align: center;
+ }
 
 .profile-pic {
     border-radius: 50%;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid #2b00ff;
+    border: 3px solid #4cb1ca;
     box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .profile-pic:hover {
     transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 0 30px rgba(255, 0, 127, 0.7);
+    box-shadow: 0 0 30px rgba(135, 195, 31, 0.7);
 }
 
 .skills-list {
@@ -101,10 +115,10 @@ section {
     background: #222;
     border: 1px solid #13c6e2;
     padding: 10px 20px;
-    border-radius: 8px;
-    width: 20em;
+    border-radius: 10px;
+    width: 25%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(255, 0, 127, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -118,10 +132,9 @@ section {
     flex-direction: column;
     gap: 40px;
     position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
-
 .portfolio-item {
     display: flex;
     align-items: center;
@@ -132,7 +145,7 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
     background: #131414;
     border: 1px solid #0febeb;
-    max-width: 45%;
+    max-width: 70%;
 }
 
 .portfolio-item.left {
@@ -147,7 +160,7 @@ section {
 }
 
 .portfolio-item img {
-    width: 80px; /* Resized to show just an overview */
+    width: 100px; /* Resized to show just an overview */
     height: auto;
     border-radius: 5px;
     margin-left: 20em;
@@ -293,4 +306,128 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #ff7f00;
     transform: scale(1.05);
+}
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .section{
+      padding: 30px ;  
+    }
+    .right-part{
+        align-items: center;
+        margin-left: 20px;
+    }
+}
+/* Medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p{
+        font-size:12px;
+    }
+    li{
+        font-size:  12px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .skills-list{
+        font-size: 12px;
+    }
+    .left-part{
+        flex: 0.5;
+    }
+    .right-part{
+        flex: 2;
+    } 
+   .profile-pic {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #00b7ff;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 30px rgba(165, 212, 7, 0.7);
+}
+#home{
+    height: 140px;
+}
+button{
+    font-size: 16px;
+}
+
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 14px;
+    }
+    p{
+        font-size: 9px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    li{
+        font-size: 8px;
+    }
+    a{
+        font-size: 10px;
+    }
+    .skills-list{
+        font-size: 8px;
+    }
+    .left-part{
+        flex: 0.5;
+    }
+    .right-part{
+        flex: 2;
+    } 
+   .profile-pic {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #00b7ff;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 30px rgba(165, 212, 7, 0.7);
+}
+#home{
+    height: 100px;
+}
+button{
+    font-size: 10px;
+}
 }

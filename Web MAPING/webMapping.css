@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 10%;
+    background-color: #1a1a1a;
+}
+
+.project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background: linear-gradient(145deg, #727b44, #875057);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.map-image{
+    width: 60%;
+    height: auto;
+}
+.project-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.project-item p {
+    font-size: 0.8rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.project-item a {
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-item a i {
+    margin-left: 5px;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.project-item:hover a {
+    color: #ff4081;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #0f0f0f;
+    color: #aaa;
+    position: relative;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #00bcd4;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #fbc02d;
+}
+
+/* Medium Screens: Tablets and Small Laptops (Max Width: 1024px) */
+@media screen and  (min-width: 740px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    #projects {
+        padding: 30px 5%;
+    }
+
+    .project-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+
+    .project-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-item p {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small Screens: Tablets and Large Mobiles (Max Width: 740px) */
+@media screen and (max-width: 740px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #projects {
+        padding: 20px 4%;
+    }
+
+    .project-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .project-item {
+        padding: 12px;
+    }
+
+    .project-item h3 {
+        font-size: 1rem;
+    }
+
+    .project-item p {
+        font-size: 0.6rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Screens: Mobile Devices (Max Width: 480px) */
+@media screen and  (max-width: 500px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    #projects {
+        padding: 10px 3%;
+    }
+
+   .project-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .project-item {
+        padding: 10px;
+    }
+.map-image{
+    width: 50%;
+}
+    .project-item h3 {
+        font-size: 0.8rem;
+    }
+
+    .project-item p {
+        font-size: 7px;
+    }
+   .project-item a {
+        font-size: 7px;
+        margin-top: 30px;
+        margin-left: 35%;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}

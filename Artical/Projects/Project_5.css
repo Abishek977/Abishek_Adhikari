@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color: #f4f4f4;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 3px solid #ff007f;
+}
+
+h1 {
+    color: #0bacf1;
+    font-size: 32px;
+    margin: 0;
+}
+
+.sub-header {
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+section {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+.description-section {
+    flex: 1.5; /* Make the text section larger to reduce empty space */
+}
+
+.project-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain; /* Ensure image fits without cutting off */
+    margin-bottom: 10px;
+}
+.findings
+{ 
+    flex:1.5;
+}
+ .visuals {
+    flex: 1;
+    max-width: 500px;
+    
+}
+
+.visual-image {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+figcaption {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Headings */
+h2 {
+    color: #0bacf1;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+h3 {
+    color: #ff007f;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* Conclusion and PDF Sections */
+.conclusion-section {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 10px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.pdf-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.pdf-link {
+    color: #ff007f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .sub-header {
+        font-size: 20px;
+    }
+    .content-wrapper {
+        gap: 30px;
+    }
+    .image-section {
+        flex: 1.2; /* Adjust image section to occupy a bit more space */
+    }
+    .description-section {
+        flex: 1.8; /* Text section takes more width to avoid empty spaces */
+    }
+    .tools-list, .data-summary {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        
+        padding: 1px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p{
+        font-size:12px ;
+    }
+    li{
+        font-size:  12px;
+    }
+    .project-image, .visual-image {
+        width: 100%;
+        height: auto;
+    }
+    .image-section, .description-section {
+        width: 100%;
+    }
+    .data-summary{
+        flex: 1;
+    } 
+    .tools-list{
+        flex: 1;
+    }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+   
+    h1 {
+        font-size: 16px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .sub-header {
+        font-size: 8px;
+    }
+    li{
+        font-size: 10px;
+    }
+    section {
+        padding: 5px 5px;
+    }
+    .project-image, .visual-image {
+        width: 100%;
+    }
+  
+    .image-section
+    {
+        flex: 1;
+    }.description-section {
+        flex: 1.5;
+        width: 100%;
+    } 
+    .findings{
+        flex: 2;
+    }
+    .visuals{
+        flex: 1;
+    } 
+    figcaption{
+        font-size: 8px;
+    }
+}

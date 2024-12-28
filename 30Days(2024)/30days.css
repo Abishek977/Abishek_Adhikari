@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #333, #555);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+}
+
+/* Intro Section */
+.intro {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #fbc02d;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: auto;
+}
+section{
+     padding: 20px 0px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.991);
+    border-radius: 0px;
+    max-width: 80%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-left: 5%;
+}
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 30px;
+}
+
+.gallery-container img {
+    width: 80%;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.gallery p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Tools Section */
+.tools {
+    text-align: center;
+    padding: 20px;
+}
+
+.tools h2 {
+    color: #fbc02d;
+    margin-bottom: 10px;
+}
+
+.tools ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.tools li {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.tools a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.tools a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+
+/* Weekly Breakdown */
+.weekly-breakdown {
+    padding: 20px;
+}
+
+/* Week Section */
+.week h3 {
+    font-size: 2rem;
+    color: #fbc02d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+/* Week Container */
+.week-container {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.week-text {
+    flex: 1.5;
+}
+
+.week-images {
+    flex: 1;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    transition: grid-template-columns 0.3s ease;
+}
+
+.week-images img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border: 2px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.collage-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.collage-image img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.collage-image:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8rem; /* Increased font size for hover text */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.collage-image:hover .image-overlay {
+    opacity: 1;
+    font-size: 15px; /* Slightly larger text on hover */
+}
+
+/* Responsive Design for Weekly Layout */
+@media screen and (min-width: 740px) {
+    .week-images {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 0.8fr));
+    }
+}
+
+@media screen and (max-width: 840px) {
+    h1 {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+    li {
+        font-size: 10px;
+    }
+    a {
+        font-size: 14px;
+    }
+    .week-text {
+        flex: 1;
+    }
+    .week-images {
+        flex: 1.2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap:0px
+    }
+    .week-images img {
+        width: 100%;
+        max-height: auto;
+        object-fit: cover;
+        border: 2px solid #555;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .intro p {
+        font-size: 13px;
+    }
+    .intro h2 {
+        font-size: 18px;
+    }
+     .day h4 {
+        font-size: 10px;
+    }
+    .week h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        background: linear-gradient(90deg, #333, #555);
+        padding: 10px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.4rem;
+        color: #00bcd4;
+    }
+    h1 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 7px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 8px;
+    }
+    li {
+        font-size: 7px;
+    }
+    a {
+        font-size: 7px;
+    }
+    .week-text {
+        flex: 1.5;
+    }
+    .week-images {
+        flex: 1;
+        margin-right: -10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 0.8fr));
+    }
+    .week-images img {
+        width: 100%;
+        max-height: auto;
+        object-fit: cover;
+        border: 2px solid #555;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .intro p {
+        font-size: 10px;
+    }
+    .intro h2 {
+        font-size: 16px;
+    }
+    .day h4 {
+        font-size: 7px;
+    }
+    .week h3 {
+        font-size: 12px;
+    }
+    .tools ul {
+        list-style-type: none;
+        margin: 10px 0;
+    }
+    .tools li {
+        margin: 5px 0;
+        font-size: 0.8rem;
+    }
+
+}

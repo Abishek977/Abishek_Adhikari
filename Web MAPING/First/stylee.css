@@ -349,4 +349,13 @@ button{
 .project-description p{
   font-size: 9px;
 }
+    .prototype-links .link-container a {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.3em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 }

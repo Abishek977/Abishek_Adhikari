@@ -11,9 +11,10 @@ body {
     
 
 }
-h2{
+h1{
     color: #0bacf1;
     font-size: 30px;
+    margin-left: 40%;
 }
 
 header {
@@ -26,6 +27,8 @@ header {
     left: 0;
     z-index: 1000;
     border-bottom: 2px solid #ff007f;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 nav ul {
@@ -63,169 +66,116 @@ section {
     margin-left: 5%;
 }
 
-#home {
-    margin-top: 60px;
-    background: linear-gradient(to right, #968a8d49, #0bacf1);
-   height:10em ;
-}  
-#home h1{
-    color: aqua;
-    
-}
+/* Image Section with Text */
 
-.profile-container {
+.image-container {
     display: flex;
     text-align: center;
     margin: 20px auto;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 100px;
 }
- .left-part{
-    flex: 1;
+#image-section .left img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+ .left{
+    flex: 1.5;
     margin-left: 10px ;
  }
- .right-part{
-    flex: 1.5;
+ .right{
+    flex: 1;
     text-align: center;
  }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border: 3px solid #4cb1ca;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
+#image-section .right h2 {
+  font-size: 1em;
 }
 
-.profile-pic:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 0 30px rgba(135, 195, 31, 0.7);
+#image-section .right p {
+  font-size: 0.8em;
+  margin-top: 40px;
 }
 
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+#image-section .divider {
+  height: 1px;
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.skill-item {
-    background: #222;
-    border: 1px solid #13c6e2;
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 25%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
+/* Team and Affiliation Section */
+#team-affiliation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
 }
 
-.skill-item:hover {
-    background-color: #ff007f;
-    transform: scale(1.1);
+#team-affiliation .team-left, #team-affiliation .team-right {
+  width: 45%;
 }
 
-.portfolio {
-            max-width: 1200px;
-            margin: auto auto;
-            padding: 10px;
-        }
-
-.portfolio-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-.portfolio-header h1 {
-            font-size: 3rem;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-.portfolio-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-        }
-
-.portfolio-item {
-     background: #222;
-    border: 1px solid #13c6e2;
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
-        }
-
-.portfolio-item a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: auto;
-        }
-
-.portfolio-item:hover {
-    background-color: #ff007f;
-    transform: scale(1.1);
-        }
- .Artical_Pic{
-            width: 70%;
-        }
-.Web-pic{
-    margin-top: 5px;
-    width: 70%;
-
-}
-.days{
-    width:70%;
-
-}
-.education-item {
-    background-color: #131414;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    text-align: left;
+#team-affiliation h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-.education-item h3 {
-    color:aqua;
+#team-affiliation ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.education-item p {
-    color: #ddd;
+#team-affiliation ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+/* Project Description Section */
+.project-description {
+  padding: 40px 10%;
+  text-align: center;
 }
 
-.social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+.project-description h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-.social-icon img {
-    width: 100%;
-    height: auto;
+.project-description p {
+  font-size: 1em;
+  line-height: 1.8;
 }
 
-.social-icon:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 15px rgba(255, 0, 127, 0.7);
+/* Prototype Section */
+#prototype {
+  padding: 40px 10%;
+  text-align: center;
 }
 
+.prototype-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.prototype-links .link-container a {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prototype-links .link-container a:hover {
+  background-color: #ff6347;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 20px;
@@ -236,49 +186,9 @@ footer {
     width: 100%;
 }
 
-button {
-    background-color: #ff007f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-button:hover {
-    background-color: #ff7f00;
-    transform: scale(1.1);
-}
+/* Media Queries */
 
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #222;
-    color: #f4f4f4;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff007f;
-    color: white;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #ff7f00;
-    transform: scale(1.05);
-}
 /* Large devices (laptops/desktops) */
 @media screen and (min-width: 768px) {
     h1 {
@@ -305,6 +215,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 18px;
+        margin-left: 25%;
     }
     h2 {
         font-size: 16px;
@@ -330,45 +241,56 @@ input[type="submit"]:hover {
     .right-part{
         flex: 2;
     } 
-   .profile-pic {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border: 3px solid #00b7ff;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.profile-pic:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 0 30px rgba(165, 212, 7, 0.7);
-}
-.portfolio{
-    width: 80%;
-}
-.portfolio-header h1{
-    font-size: 1rem;
-    margin: auto;
-}
-.portfolio-item{
-    width: 25%;
-    display: flex;
-}
-.portfolio-item a{
-    font-size: 15px;
-}
-.portfolio-wrapper{
-     display: flex;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: auto;
-}
-
 #home{
     height: 140px;
 }
 button{
     font-size: 16px;
+}
+#image-section .right h2 {
+  font-size: 0.9em;
+}
+
+#image-section .right p {
+  font-size: 0.6em;
+  margin-top: 10px;
+}
+#team-affiliation ul li {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.project-description{
+  margin-top: -20px;
+}
+.project-description h2{
+  font-size: 17px;
+}
+.project-description p{
+  font-size: 12px;
+}
+#prototype {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.prototype-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.prototype-links .link-container a {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prototype-links .link-container a:hover {
+  background-color: #cf2cc7;
 }
 
 }
@@ -377,6 +299,7 @@ button{
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 14px;
+        margin-left: 20%;
     }
     p{
         font-size: 9px;
@@ -397,45 +320,33 @@ button{
         font-size: 8px;
     }
     .left-part{
-        flex: 0.5;
+        flex: 0.2;
     }
     .right-part{
         flex: 2;
     } 
-   .profile-pic {
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border: 3px solid #00b7ff;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-.profile-pic:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 0 30px rgba(165, 212, 7, 0.7);
-}
-.portfolio{
-    width: 70%;
-}
-.portfolio-item{
-    width: 70%;
-    display: flex;
-}
-.portfolio-item a{
-    font-size: 7px;
-}
-.portfolio-wrapper{
-     display: flex;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 10px;
-            margin: auto;
-}
 #home{
     height: 100px;
 }
 button{
     font-size: 10px;
+}
+#image-section .right h2 {
+  font-size: 0.8em;
+}
+
+#image-section .right p {
+  font-size: 0.5em;
+  margin-top: 10px;
+}
+.project-description{
+  margin-top: -20px;
+}
+.project-description h2{
+  font-size: 16px;
+}
+.project-description p{
+  font-size: 9px;
 }
 }

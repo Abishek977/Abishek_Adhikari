@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.991);
+    color: #f4f4f4;
+    padding-bottom: 60px;
+    transition: background-color 0.5s;
+    width: 95%;
+    
+
+}
+h1{
+    color: #0bacf1;
+    font-size: 30px;
+    margin-left: 40%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f4f4f4;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff007f;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #10b4f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 20px 0px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.991);
+    border-radius: 0px;
+    max-width: 100%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-left: 5%;
+}
+
+/* Image Section with Text */
+
+.image-container {
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#image-section .left img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+ .left{
+    flex: 1.5;
+    margin-left: 10px ;
+ }
+ .right{
+    flex: 1;
+    text-align: center;
+ }
+
+#image-section .right h2 {
+  font-size: 1em;
+}
+
+#image-section .right p {
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+#image-section .divider {
+  height: 1px;
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Team and Affiliation Section */
+#team-affiliation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+#team-affiliation .team-left, #team-affiliation .team-right {
+  width: 45%;
+}
+
+#team-affiliation h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#team-affiliation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#team-affiliation ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Project Description Section */
+.project-description {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.project-description h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.project-description p {
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+/* Prototype Section */
+#prototype {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.prototype-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.prototype-links .link-container a {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prototype-links .link-container a:hover {
+  background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .section{
+      padding: 30px ;  
+    }
+    .right-part{
+        align-items: center;
+        margin-left: 20px;
+    }
+}
+/* Medium devices (tablets) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+        margin-left: 25%;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p{
+        font-size:12px;
+    }
+    li{
+        font-size:  12px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .skills-list{
+        font-size: 12px;
+    }
+    .left-part{
+        flex: 0.5;
+    }
+    .right-part{
+        flex: 2;
+    } 
+#home{
+    height: 140px;
+}
+button{
+    font-size: 16px;
+}
+#image-section .right h2 {
+  font-size: 0.9em;
+}
+
+#image-section .right p {
+  font-size: 0.6em;
+  margin-top: 10px;
+}
+#team-affiliation ul li {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.project-description{
+  margin-top: -20px;
+}
+.project-description h2{
+  font-size: 17px;
+}
+.project-description p{
+  font-size: 12px;
+}
+#prototype {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.prototype-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.prototype-links .link-container a {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prototype-links .link-container a:hover {
+  background-color: #cf2cc7;
+}
+
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 14px;
+        margin-left: 20%;
+    }
+    p{
+        font-size: 9px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    li{
+        font-size: 8px;
+    }
+    a{
+        font-size: 10px;
+    }
+    .skills-list{
+        font-size: 8px;
+    }
+    .left-part{
+        flex: 0.2;
+    }
+    .right-part{
+        flex: 2;
+    } 
+
+#home{
+    height: 100px;
+}
+button{
+    font-size: 10px;
+}
+#image-section .right h2 {
+  font-size: 0.8em;
+}
+
+#image-section .right p {
+  font-size: 0.5em;
+  margin-top: 10px;
+}
+.project-description{
+  margin-top: -20px;
+}
+.project-description h2{
+  font-size: 16px;
+}
+.project-description p{
+  font-size: 9px;
+}
+}

@@ -185,6 +185,16 @@ section{
     opacity: 1;
     font-size: 15px; /* Slightly larger text on hover */
 }
+footer{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
 
 /* Responsive Design for Weekly Layout */
 @media screen and (min-width: 740px) {
